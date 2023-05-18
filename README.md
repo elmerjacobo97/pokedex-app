@@ -1,6 +1,8 @@
 # 🌟 Pokedex App
 
-Esta es una aplicación de Pokedex desarrollada con React Native que consume la API pokeapi.co para mostrar información sobre Pokémon. La aplicación permite buscar y ver detalles de diferentes Pokémon, como su nombre, tipo, habilidades y estadísticas.
+Esta es una aplicación de Pokedex desarrollada con React Native y TypeScript. La aplicación te permite explorar y descubrir información detallada sobre diversos Pokémon. Utilizando la API de pokeapi.co, podrás obtener datos como el nombre, tipo, habilidades y estadísticas de cada Pokémon.
+
+Una característica destacada de la aplicación es su capacidad para guardar favoritos de forma persistente, incluso cuando se recarga la app. Esto se logra mediante el uso de las tecnologías Async Storage y Redux Persist.
 
 ## 🔗 Enlaces
 
@@ -103,13 +105,10 @@ git push origin nueva-funcion
 - React Native (v0.71.8)
 - React Navigation (v6.1.6)
 - Redux Toolkit (v1.9.5)
+- TypeScript (v4.8.4)
 - Axios (v1.4.0)
 - React Redux (v8.0.5)
 - Redux Persist (v6.0.0)
-- @react-native-async-storage/async-storage (v1.18.1)
-- @react-native-vector-icons (v9.2.0)
-- react-native-image-colors (v1.5.2)
-- react-native-toast-message (v2.1.6)
 
 ## 🌟 Créditos
 
