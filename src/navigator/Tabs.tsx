@@ -1,9 +1,7 @@
-import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
-import {TabList} from './TabList';
 import {Platform} from 'react-native';
+import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 import Icon from 'react-native-vector-icons/Ionicons';
-import {TabSearch} from './TabSearch';
-import {TabFavorites} from './TabFavorites';
+import {TabList, TabFavorites, TabSearch} from './';
 
 const Tab = createBottomTabNavigator();
 

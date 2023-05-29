@@ -1,5 +1,4 @@
 import {Image, ActivityIndicator, FlatList, View} from 'react-native';
-import React from 'react';
 import {usePokePaginated} from '../hooks';
 import {PokedexLogo, PokemonCard} from '../components';
 import {styles} from '../theme';
@@ -11,7 +10,7 @@ export const HomeScreen = () => {
     <>
       <Image
         source={require('../assets/poke-bola.png')}
-        style={styles.pokeBolBg}
+        style={styles.pokeBolaBg}
       />
       <View style={{alignItems: 'center'}}>
         <FlatList

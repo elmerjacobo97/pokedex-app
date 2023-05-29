@@ -6,17 +6,17 @@ import {
   Image,
   ActivityIndicator,
 } from 'react-native';
-import React from 'react';
 import {StackScreenProps} from '@react-navigation/stack';
 import {RootStackParams} from '../navigator';
 import Icon from 'react-native-vector-icons/Ionicons';
 import {useSafeAreaInsets} from 'react-native-safe-area-context';
+import {useDispatch, useSelector} from 'react-redux';
+import Toast from 'react-native-toast-message';
+
 import {FadeInImage, PokemonDetails} from '../components';
 import {usePokemon} from '../hooks';
-import {useDispatch, useSelector} from 'react-redux';
 import {AppDispatch, RootState} from '../store';
 import {addToFavorites, removeFromFavorites} from '../store/features/favorites';
-import Toast from 'react-native-toast-message';
 
 interface Props extends StackScreenProps<RootStackParams, 'PokemonScreen'> {}
 
@@ -29,7 +29,7 @@ export const PokemonScreen = ({navigation, route}: Props) => {
   const dispatch: AppDispatch = useDispatch();
   const {favorites} = useSelector((state: RootState) => state.favorites);
 
-  const isFavorite = favorites.some(poke => poke.id === id);
+  const isFavorite = favorites.some(poke => poke.id === id); // TRUE OR FALSE
 
   const handleToggleFavorite = () => {
     if (isFavorite) {

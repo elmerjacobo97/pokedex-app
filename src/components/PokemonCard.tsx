@@ -6,7 +6,7 @@ import {
   Image,
   Text,
 } from 'react-native';
-import React, {useEffect, useRef, useState} from 'react';
+import {useEffect, useRef, useState} from 'react';
 import ImageColors from 'react-native-image-colors';
 import {CommonActions, useNavigation} from '@react-navigation/native';
 import {SimplePokemon} from '../interfaces';
@@ -38,6 +38,7 @@ export const PokemonCard = ({pokemon}: Props) => {
       isMounted.current = false;
     };
   }, [pokemon.picture]);
+
   return (
     <TouchableOpacity
       activeOpacity={0.8}
